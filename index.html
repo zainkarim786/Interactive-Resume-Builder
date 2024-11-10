@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dist/script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Resume Builder</h1>
+        <form id="resume-form">
+            <section>
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <input type="text" id="school" placeholder="School/University" required>
+                <input type="text" id="degree" placeholder="Degree" required>
+                <input type="text" id="year" placeholder="Year of Graduation" required>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <textarea id="experience" placeholder="Describe your work experience" required></textarea>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume" class="resume">
+            <h2>Generated Resume</h2>
+            <div id="resume-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
